@@ -25,7 +25,8 @@ func main() {
 	}
 
 	// Load server's certificate and private key from the scripts directory
-	cert, err := tls.LoadX509KeyPair("../scripts/localhost.crt", "../scripts/localhost.key")
+	//TODO: Right now this is for local development. This will need to be changed for production.
+	cert, err := tls.LoadX509KeyPair("../scripts/server.crt", "../scripts/server.key")
 	if err != nil {
 		log.Fatalf("failed to load server's certificate and key: %v", err)
 	}

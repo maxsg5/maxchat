@@ -10,7 +10,8 @@ import (
 
 func main() {
 	// Load the server's CA certificate
-	creds, err := credentials.NewClientTLSFromFile("../scripts/localhost.crt", "")
+	//TODO: Right now this is for local development. This will need to be changed for production.
+	creds, err := credentials.NewClientTLSFromFile("../scripts/server.crt", "")
 	if err != nil {
 		log.Fatalf("failed to load server's CA certificate: %v", err)
 	}
