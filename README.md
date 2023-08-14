@@ -58,7 +58,7 @@ sudo apt-get install openssl
 Navigate to the scripts directory and run the appropriate script for your platform:
 - Windows (PowerShell):
 ```
-.\generate-certs.ps1`
+.\generate-certs.ps1
 ```
 - macOS/Linux (Bash):
 ```
