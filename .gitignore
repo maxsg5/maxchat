@@ -1,3 +1,3 @@
 # .gitignore
-localhost.crt
-localhost.key
+scripts/localhost.crt
+scripts/localhost.key
