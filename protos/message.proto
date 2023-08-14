@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package simplechat;
+option go_package = "grpc-simplechat/api";
+
+service MyService {
+    rpc GetMessage (MessageRequest) returns (MessageResponse);
+}
+
+message MessageRequest {}
+
+message MessageResponse {
+    string message = 1;
+}
