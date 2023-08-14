@@ -64,7 +64,9 @@ Navigate to the scripts directory and run the appropriate script for your platfo
 ```
 ./generate-certs.sh
 ```
-This will produce two files in your directory: localhost.key (private key) and localhost.crt (public certificate). Use these for local development.
+This will produce two files in your directory: localhost.key (private key) and localhost.crt (public certificate). Use these for local development. 
+
+NOTE: After running the script it will ask for a common name. By default it will be "localhost" you can hit enter/return if working locally.
 
 ## Run the Server
 navigate to the server directory and run the following command:
